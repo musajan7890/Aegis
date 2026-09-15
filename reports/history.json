@@ -1,0 +1,154 @@
+[
+    {
+        "scan_id": 1,
+        "timestamp": "2026-09-13T16:36:56",
+        "targets": [
+            "example.com"
+        ],
+        "total_findings": 5,
+        "findings": [
+            {
+                "title": "Missing HSTS Header",
+                "severity": "Medium",
+                "description": "The server response does not include the Strict-Transport-Security header.",
+                "evidence": "Strict-Transport-Security header is missing.",
+                "impact": "Without HSTS, browsers may be more exposed to downgrade or first-connection interception risks.",
+                "recommendation": "Configure Strict-Transport-Security with an appropriate max-age value after confirming HTTPS is correctly configured."
+            },
+            {
+                "title": "Missing Content Security Policy",
+                "severity": "Low",
+                "description": "The server response does not include a Content-Security-Policy header.",
+                "evidence": "Content-Security-Policy header is missing.",
+                "impact": "The absence of CSP removes an important browser-side security control that can reduce the impact of some cross-site scripting attacks.",
+                "recommendation": "Consider implementing a Content-Security-Policy appropriate for the application's resources."
+            },
+            {
+                "title": "Missing X-Content-Type-Options Header",
+                "severity": "Low",
+                "description": "The server response does not include the X-Content-Type-Options header.",
+                "evidence": "X-Content-Type-Options header is missing.",
+                "impact": "Browsers may perform MIME-type sniffing in situations where explicitly disabling sniffing would provide additional protection.",
+                "recommendation": "Consider setting X-Content-Type-Options to nosniff."
+            },
+            {
+                "title": "Missing X-Frame-Options Header",
+                "severity": "Low",
+                "description": "The server response does not include the X-Frame-Options header.",
+                "evidence": "X-Frame-Options header is missing.",
+                "impact": "The application may have less protection against certain clickjacking scenarios.",
+                "recommendation": "Consider configuring X-Frame-Options or an equivalent frame-ancestors directive in Content-Security-Policy."
+            },
+            {
+                "title": "Missing Referrer-Policy Header",
+                "severity": "Informational",
+                "description": "The server response does not include the Referrer-Policy header.",
+                "evidence": "Referrer-Policy header is missing.",
+                "impact": "The browser may disclose more referrer information than necessary when navigating between resources.",
+                "recommendation": "Consider configuring a restrictive Referrer-Policy appropriate for the application."
+            }
+        ]
+    },
+    {
+        "scan_id": 2,
+        "timestamp": "2026-09-13T21:04:32",
+        "targets": [
+            "example.com"
+        ],
+        "total_findings": 5,
+        "findings": [
+            {
+                "title": "Missing HSTS Header",
+                "severity": "Medium",
+                "description": "The server response does not include the Strict-Transport-Security header.",
+                "evidence": "Strict-Transport-Security header is missing.",
+                "impact": "Without HSTS, browsers may be more exposed to downgrade or first-connection interception risks.",
+                "recommendation": "Configure Strict-Transport-Security with an appropriate max-age value after confirming HTTPS is correctly configured."
+            },
+            {
+                "title": "Missing Content Security Policy",
+                "severity": "Low",
+                "description": "The server response does not include a Content-Security-Policy header.",
+                "evidence": "Content-Security-Policy header is missing.",
+                "impact": "The absence of CSP removes an important browser-side security control that can reduce the impact of some cross-site scripting attacks.",
+                "recommendation": "Consider implementing a Content-Security-Policy appropriate for the application's resources."
+            },
+            {
+                "title": "Missing X-Content-Type-Options Header",
+                "severity": "Low",
+                "description": "The server response does not include the X-Content-Type-Options header.",
+                "evidence": "X-Content-Type-Options header is missing.",
+                "impact": "Browsers may perform MIME-type sniffing in situations where explicitly disabling sniffing would provide additional protection.",
+                "recommendation": "Consider setting X-Content-Type-Options to nosniff."
+            },
+            {
+                "title": "Missing X-Frame-Options Header",
+                "severity": "Low",
+                "description": "The server response does not include the X-Frame-Options header.",
+                "evidence": "X-Frame-Options header is missing.",
+                "impact": "The application may have less protection against certain clickjacking scenarios.",
+                "recommendation": "Consider configuring X-Frame-Options or an equivalent frame-ancestors directive in Content-Security-Policy."
+            },
+            {
+                "title": "Missing Referrer-Policy Header",
+                "severity": "Informational",
+                "description": "The server response does not include the Referrer-Policy header.",
+                "evidence": "Referrer-Policy header is missing.",
+                "impact": "The browser may disclose more referrer information than necessary when navigating between resources.",
+                "recommendation": "Consider configuring a restrictive Referrer-Policy appropriate for the application."
+            }
+        ]
+    },
+    {
+        "scan_id": 3,
+        "timestamp": "2026-09-13T21:29:02",
+        "targets": [
+            "platacard.mx"
+        ],
+        "total_findings": 0,
+        "findings": []
+    },
+    {
+        "scan_id": 4,
+        "timestamp": "2026-09-13T21:29:33",
+        "targets": [
+            "bancoplata.mx"
+        ],
+        "total_findings": 0,
+        "findings": []
+    },
+    {
+        "scan_id": "20260915-015415",
+        "timestamp": "2026-09-15T01:54:15.147627",
+        "targets": [
+            "platacard.mx"
+        ],
+        "total_findings": 3,
+        "findings": [
+            {
+                "title": "Missing Content Security Policy",
+                "severity": "Low",
+                "description": "The server response does not include a Content-Security-Policy header.",
+                "evidence": "Content-Security-Policy header is missing.",
+                "impact": "The absence of CSP removes an important browser-side security control that can reduce the impact of some cross-site scripting attacks.",
+                "recommendation": "Consider implementing a Content-Security-Policy appropriate for the application's resources."
+            },
+            {
+                "title": "Missing X-Frame-Options Header",
+                "severity": "Low",
+                "description": "The server response does not include the X-Frame-Options header.",
+                "evidence": "X-Frame-Options header is missing.",
+                "impact": "The application may have less protection against certain clickjacking scenarios.",
+                "recommendation": "Consider configuring X-Frame-Options or an equivalent frame-ancestors directive in Content-Security-Policy."
+            },
+            {
+                "title": "Missing Referrer-Policy Header",
+                "severity": "Informational",
+                "description": "The server response does not include the Referrer-Policy header.",
+                "evidence": "Referrer-Policy header is missing.",
+                "impact": "The browser may disclose more referrer information than necessary when navigating between resources.",
+                "recommendation": "Consider configuring a restrictive Referrer-Policy appropriate for the application."
+            }
+        ]
+    }
+]
